@@ -800,8 +800,8 @@ class OneEntryPolicy(BasePolicy):
     answers = {'h': EXTRACT_HERE, 'i': EXTRACT_WRAP, 'r': EXTRACT_RENAME,
                '': EXTRACT_WRAP}
     choice_template = ["extract the %s _I_nside a new directory named %s",
-                       "extract the %s and _R_ename it %s",
-                       "extract the %s _H_ere"]
+                       "extract the %s and _r_ename it %s",
+                       "extract the %s _h_ere"]
     prompt = "What do you want to do?  (I/r/h) "
 
     def __init__(self, options):
